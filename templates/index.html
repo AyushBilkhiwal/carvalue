@@ -9,12 +9,12 @@
 
 <body>
 
-    <div style="color:blue">
+    <div style="color:lightblue">
         <form action="{{ url_for('predict')}}" method="post">
-            <h2>Predictive analysis</h2>
-            <h3>Year</h3>
+            <h2>Get your car resale market value by just providing some information</h2>
+            <h3>In which year you bought the vehicle?</h3>
             <input id="first" name="Year" type="number ">
-            <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
+            <h3>What was the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
             <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
             <h3>How much owners previously had the car(0 or 1 or 3) ?</h3><br><input id="fourth" name="Owner" required="required">
             <h3>What Is the Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
@@ -48,9 +48,15 @@
 
     <style>
         body {
-            background-color: lightslategray;
+            background-image: url("blurred-traffic-light-trails-road.jpg");
+            background-color: mintcream;
             text-align: center;
             padding: 0px;
+            background-color: red; /* Used if the image is unavailable */
+            height: 1000px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
         }
         
         #research {
