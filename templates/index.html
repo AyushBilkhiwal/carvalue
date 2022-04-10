@@ -9,7 +9,7 @@
 
 <body>
 
-    <div style="color:lightblue">
+    <div style="color:darkblue">
         <form action="{{ url_for('predict')}}" method="post">
             <h2>Get your car resale market value by just providing some information</h2>
             <h3>In which year you bought the vehicle?</h3>
@@ -40,7 +40,7 @@
 
 
 
-        <br><br><h3>{{ prediction_text }}<h3>
+        <br><br><h3>Predicted value: <h3>
     </div>
 
 
@@ -48,11 +48,11 @@
 
     <style>
         body {
-            background-image: url("blurred-traffic-light-trails-road.jpg");
-            background-color: mintcream;
+            
+            background-color: lightblue;
             text-align: center;
             padding: 0px;
-            background-color: red; /* Used if the image is unavailable */
+             /* Used if the image is unavailable */
             height: 1000px; /* You must set a specified height */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
